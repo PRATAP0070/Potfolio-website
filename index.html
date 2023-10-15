@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap" rel="stylesheet">
+    <title>ARYAN - PERSONEL PORTFOLIO</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(24, 24, 77);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+
+            color: rgb(79, 79, 153);
+            font-size: 1.1rem;
+        }
+
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 10px 0;
+        }
+
+        .firstsection>div {
+            width: 30%;
+        }
+
+        .leftsection {
+            font-size: 3rem;
+        }
+
+        .rightsection img {
+            width: 100%;
+        }
+
+        .purple {
+            color: rgb(133, 55, 206);
+        }
+
+        #element {
+            color: rgb(133, 55, 206);
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+        }
+
+        .secondsection h1 {
+            font-size: 1.5rem;
+        }
+
+        .achievements-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .achievement-card {
+            background-color: #07044d;
+            border: 1px solid #000000;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            width: 300px;
+            box-shadow: -10px 11px 19px 1px rgb(255 252 252 / 10%);
+        }
+        
+    
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">ARYAN'S PORTFOLIO</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a> </li>
+                    <li><a href="about.html">About</a> </li>
+
+                    <li><a href="contactme.html">Contact Me</a> </li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi , MY NAME IS <span class="purple">ARYAN</span>
+                <div>I am a Passioanate </div>
+                <span id="element"></span>
+            </div>
+
+            <div class="rightsection">
+                <img src="aryan2.png" alt="aryan image">
+            </div>
+        </section>
+        <hr>
+
+        <section class="secondsection">
+            <h1>Achievements</h1>
+            <div class="achievements-container">
+                <div class="achievement-card">
+                    <h3>COURSERA certification</h3>
+
+                    <p>"I hold a certification in Responsive Website Development and Design from Coursera, demonstrating
+                        my expertise in creating user-friendly and visually appealing websites that adapt seamlessly to
+                        various devices and screen sizes.</p>
+                    <p><a href="https://www.coursera.org/account/accomplishments/verify/NVKB4YDXS3UJ">VIEW
+                            certification</a></p>
+                </div>
+
+                <div class="achievement-card">
+                    <h3>COURSERA certification</h3>
+
+                    <p>I hold a certification in 'Writing Skills for Engineering Leaders' from Coursera, which has
+                        equipped me with the essential communication and writing skills required to excel in the
+                        engineering field. This certification has not only honed my technical writing abilities but also
+                        enhanced my capacity to effectively convey complex engineering concepts to both technical and
+                        non-technical audiences.</p>
+                    <p><a href=https://www.coursera.org/account/accomplishments/verify/EP4PV96HXFHQ>VIEW
+                            certification</a></p>
+                </div>
+            </div>
+
+
+        </section>
+
+        
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer ', 'video Editor '],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
